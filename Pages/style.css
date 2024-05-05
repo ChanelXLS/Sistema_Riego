@@ -1,0 +1,113 @@
+header{
+  text-align: justify;
+  margin: 40px;
+  
+}
+
+section{
+  margin: 40px;
+  text-align: justify;
+}
+
+body{
+  background-color: whitesmoke;
+}
+
+#plantalia_titulo{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 9%;
+    color: rgb(255, 221, 199);
+    font-family: italic;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-image: url('plantalia2.jpeg'); /* Ruta de la imagen de fondo */
+    background-size: 87% auto; /* Ajustar el tamaño de la imagen para cubrir el ancho y ajustar la altura automáticamente */
+    background-repeat: no-repeat; /* Evitar la repetición de la imagen */
+    background-position: center top; /* Posicionar la imagen en el centro */
+    background-attachment: fixed; /* Fijar la imagen en la posición */
+    padding: 100px 70px 70px;
+    -webkit-text-stroke: 1px rgba(65, 65, 65, 0.523); /* Borde de 1 píxel de grosor, color negro */
+
+  }
+
+
+  #Registro_planta{
+    text-align: left;
+    padding: 10px;
+  }
+  
+  
+
+
+
+
+
+/*  footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+
+      display: flex; /* Para usar flexbox */
+      align-items: center; /* Para centrar verticalmente el contenido */
+      justify-content: center; /* Para alinear el contenido a la izquierda */
+      padding: 5px; /* Espaciado interior */
+    }
+    
+    
+
+  nav ul {
+    list-style-type: none; /* Quita los puntos de la lista */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Aplica un modelo de caja flexible */
+    justify-content: center; /* Centra horizontalmente los elementos */
+}
+
+nav ul li {
+    margin-right: 20px; /* Espacio entre elementos (puedes ajustarlo según tu diseño) */
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Elimina el margen derecho del último elemento */
+}
+
+
+
+/*.gif-container {
+  position: fixed; /* Se mantiene fijo en la ventana */
+ /* top: 0; /* Alineado en la parte superior */
+  /*right: 0; /* Alineado en la parte derecha */
+  /*width: 100px; /* Ancho del contenedor */
+ /* height: 100px; /* Altura del contenedor */
+ /* z-index: 9999; /* Asegura que esté por encima de otros elementos */
+ /* right: -2%;
+}*/
+
+
+.contenido-imagen {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+
+.imagen-izquierda, .imagen-derecha {
+  flex: 0 0 30%; /* Ancho de las imágenes */
+}
+
+.imagen-izquierda img, .imagen-derecha img {
+  width: 100%; /* Tamaño completo de las imágenes */
+  border-radius: 10px; /* Bordes redondeados para las imágenes */
+}
+
+
+
+
+
