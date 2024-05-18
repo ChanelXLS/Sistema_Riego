@@ -1,3 +1,6 @@
+/*Parte del inicio tipo de planta*/
+
+
 header{
   text-align: justify;
   margin: 40px;
@@ -13,21 +16,38 @@ body{
   background-color: whitesmoke;
 }
 
-#plantalia_titulo{
-    font-size: 40px;
-    text-align: center;
-    margin-top: 9%;
-    color: rgb(255, 221, 199);
-    font-family: italic;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    background-image: url('plantalia2.jpeg'); /* Ruta de la imagen de fondo */
-    background-size: 87% auto; /* Ajustar el tamaño de la imagen para cubrir el ancho y ajustar la altura automáticamente */
-    background-repeat: no-repeat; /* Evitar la repetición de la imagen */
-    background-position: center top; /* Posicionar la imagen en el centro */
-    background-attachment: fixed; /* Fijar la imagen en la posición */
-    padding: 100px 70px 70px;
-    -webkit-text-stroke: 1px rgba(65, 65, 65, 0.523); /* Borde de 1 píxel de grosor, color negro */
 
+#plantalia_titulo{
+  font-size: 60px;
+  text-align: center;
+  font-family: serif;
+  font-weight: 900;
+  margin-top: 2%;
+  color: rgb(244, 190, 74);
+  background-color:rgba(249, 166, 12, 0.584);
+  font-family: italic;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.824);
+  background-image: url('../imagenes/plantalia2.jpeg'); /* Ruta de la imagen de fondo */
+  background-size: 87% auto; /* Ajustar el tamaño de la imagen para cubrir el ancho y ajustar la altura automáticamente */
+  background-repeat: no-repeat; /* Evitar la repetición de la imagen */
+  background-position: center top; /* Posicionar la imagen en el centro */
+  background-attachment: fixed; /* Fijar la imagen en la posición */
+  padding: 100px 70px 70px;
+  padding-bottom: 100px;
+  -webkit-text-stroke: 1.2px rgba(0, 0, 0, 0.724); /* Borde de 1 píxel de grosor, color negro */
+
+}
+
+
+  br{
+    line-height: 8;
+  }
+
+  .img_header img{
+    width: 100%;
+    height: 200px;
+    overflow: hidden; /*oculta cualquier contenido qie se quiera desbordar en el contenedor*/
+    object-fit: cover;
   }
 
 
@@ -35,30 +55,32 @@ body{
     text-align: left;
     padding: 10px;
   }
+
+
   
-  
-
-
-
-
 
 /*  footer */
-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #f0f0f0;
-    padding: 10px;
-    text-align: center;
 
-      display: flex; /* Para usar flexbox */
-      align-items: center; /* Para centrar verticalmente el contenido */
-      justify-content: center; /* Para alinear el contenido a la izquierda */
-      padding: 5px; /* Espaciado interior */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f0f0f0;
+  padding: 10px;
+  text-align: center;
+
+    display: flex; /* Para usar flexbox */
+    align-items: center; /* Para centrar verticalmente el contenido */
+    justify-content: center; /* Para alinear el contenido a la izquierda */
+    padding: 0.1px; /* Espaciado interior */
+  }
+    
+    nav{
+      margin-top:  50px;
     }
-    
-    
+
+
 
   nav ul {
     list-style-type: none; /* Quita los puntos de la lista */
@@ -69,43 +91,177 @@ footer {
 }
 
 nav ul li {
-    margin-right: 20px; /* Espacio entre elementos (puedes ajustarlo según tu diseño) */
+    margin-right: 20px; /* Espacio entre elementos*/
 }
 
 nav ul li:last-child {
     margin-right: 0; /* Elimina el margen derecho del último elemento */
 }
 
-
-
-/*.gif-container {
-  position: fixed; /* Se mantiene fijo en la ventana */
- /* top: 0; /* Alineado en la parte superior */
-  /*right: 0; /* Alineado en la parte derecha */
-  /*width: 100px; /* Ancho del contenedor */
- /* height: 100px; /* Altura del contenedor */
- /* z-index: 9999; /* Asegura que esté por encima de otros elementos */
- /* right: -2%;
-}*/
-
-
-.contenido-imagen {
+/*.contenido-imagen {
   display: flex;
+  margin: auto;
+  width: 80%;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   margin-bottom: 20px;
+  
 }
 
 
 .imagen-izquierda, .imagen-derecha {
-  flex: 0 0 30%; /* Ancho de las imágenes */
-}
+  flex: 0 0 70%; /* Ancho de las imágenes */
+/*}
 
 .imagen-izquierda img, .imagen-derecha img {
-  width: 100%; /* Tamaño completo de las imágenes */
-  border-radius: 10px; /* Bordes redondeados para las imágenes */
+  width: 30%; /* Tamaño completo de las imágenes */
+ /* border-radius: 10px; /* Bordes redondeados para las imágenes */
+/*}*/
+
+
+/*IMAGENES*/
+
+/* Alineación de imágenes y texto */
+
+.contenedor_flex {
+  display: flex;
+  align-items: center; /* Centrar verticalmente */
+  margin-bottom: 20px; /* Espacio entre cada sección */
 }
+
+.texto_izquierda {
+  flex-grow: 1; /* Ocupa el espacio restante */
+  text-align: justify; /* Justificar texto */
+  margin-left: 20px; /* Espacio entre el texto y la imagen */
+}
+
+.imagen_derecha img{
+  width: 250px; /* Ajusta el tamaño de la imagen */
+  height: auto; /* Ajusta la altura de la imagen */
+  object-fit: cover; /* Asegura que la imagen mantenga su proporción */
+}
+
+.imagen_derecha {
+  margin-left: 40px; /* Espacio entre la imagen derecha y el texto */
+}
+
+
+
+
+/* Parte de registro de planta*/
+
+/*INICIO PARTE GIF*/
+.contenido {
+  display: flex;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+}
+
+.flex-container {
+  display: flex;
+  align-items: center; /* Centra verticalmente */
+}
+
+#Registro_planta {
+  margin: 0 10px; /* Espacio entre el texto y los GIFs */
+  text-align: center; /* Centra el texto */
+}
+
+.gif_container {
+  width: 60px; /* Ajusta el tamaño del contenedor del GIF según sea necesario */
+  height: auto;
+}
+
+.left-gif {
+  margin-right: 10px; /* Espacio entre el GIF izquierdo y el texto */
+}
+
+.right-gif {
+  margin-left: 10px; /* Espacio entre el GIF derecho y el texto */
+}
+
+.gif_container img {
+  width: 100%; /* Asegura que el GIF se ajuste al contenedor */
+  height: auto;
+}
+
+
+/*FIN PARTE GIF*/
+
+
+
+#Registro_planta{
+  font-size: 60px;
+  font-family: serif;
+  text-align: center;
+  text-shadow: 4px 4px 4px rgba(69, 64, 64, 0.505);
+  -webkit-text-stroke: 0.2px rgba(0, 0, 0, 0.724); /* Borde de 1 píxel de grosor, color negro */
+  font-weight: 1000;
+  background-image: url(https://i.gifer.com/embedded/download/PELN.gif);
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+#contenido_registro{
+  text-align: justify;
+  margin: 40px;
+}
+
+#contenido_registro_down{
+  text-align: justify;
+  margin: 40px;
+}
+
+#formulario_registro{
+  text-align: justify;
+  margin: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.contenedor-flex {
+  display: flex;
+  align-items: center; /* Centrar verticalmente 
+}
+
+.texto-derecha {
+  flex-grow: 1; /* Ocupar el espacio restante *
+  text-align: right;
+  margin-right: 100px; /* Espacio entre el texto y la imagen 
+}
+
+.imagen-derecha img {
+  max-width: 8000px; /* Establecer el ancho máximo, por ejemplo, 800px *
+  max-height: 1000%; /* Mantener la altura proporcional al ancho *
+}
+
+.texto-izquierda {
+  flex-grow: 1; /* Ocupar el espacio restante *
+  text-align: left;
+  margin-right: 100px; /* Espacio entre el texto y la imagen *
+}
+
+.imagen-izquierda img {
+  max-width: 5000px; /* ancho *
+  max-height: 1000%; /* alto (con ancho) *
+} */
+
+
 
 
 

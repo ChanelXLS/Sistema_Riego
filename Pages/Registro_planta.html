@@ -4,16 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro de Planta</title>
+    <title>PLANTALIA</title>
 
     
     <!-- Enlace a tu archivo CSS -->
     <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
     <!-- Menú de navegación -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 
     <nav> <!--menu para navegacion, en los li estaran los enlaces a dicho menu-->
         <ul>
@@ -24,13 +26,23 @@
         </ul>
     </nav>
     
-
-    <!-- Contenido de la página -->
-    <div class="contenido">
-        <!-- Título de la página -->
-        <div>
-            <h1 id="Registro_planta">Registro de la planta</h1>
+<!-- Contenido de la página -->
+<div class="contenido">
+    <!-- Contenedor para el título y los GIFs -->
+    <div id="contenido_registro" class="flex-container">
+        <div class="gif_container left-gif">
+            <img src="https://i.pinimg.com/originals/73/3f/8c/733f8cf10682a8b10249838bbc07abb5.gif" alt="sunflower-left">
         </div>
+        
+        <h1 id="Registro_planta">Registro de la planta</h1>
+        
+        <div class="gif_container right-gif">
+            <img src="../imagenes/sunflower-pvz.gif" alt="sunflower-right">
+        </div>
+    </div>
+</div>
+
+    
 
 
         <form id="formulario_registro" action="procesar_registro.php" method="POST">
@@ -59,25 +71,34 @@
             </select>
 
             <!-- Botón para enviar el formulario -->
-            <button type="submit">Subir</button>
+            <button type="submit" class="btn btn-outline-secondary">Subir</button>
+
+
+            
         </form>
 
     </div>
 
-    <div>
+    <div id="contenido_registro_down">
         <p><strong>si no sabes que tipo de planta tienes, haz click en página de información sobre tipo de
                 plantas</strong></p>
-        <button type="button">Tipo de plantas</button>
-    </div>
-    <p>Nota: Se podrán editar estos valores después del registro por si hay algún error.</p>
+                <a href="Tipo_de_planta.html"> <button type="submit" class="btn btn-outline-success">Tipo de planta</button> </a>
+
+                <br>
+    <p><em><strong> Nota:</strong> Se podrán editar estos valores después del registro por si hay algún error.</em></p>
+</div>
 
 
 
-    <footer>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-        <p>Sistema de Riego - Todos los derechos reservados</p>
 
-        <i class="fas fa-leaf"></i>    </footer>
+
+        <footer>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+            <p>Sistema de Riego - Todos los derechos reservados</p>
+    
+            <i class="fas fa-leaf"></i>
+        </footer>
+    
 </body>
 
 </html>

@@ -1,7 +1,7 @@
-let router = require('express').Router();
+const router = require('express').Router();
 
-let clientes =  require('./clientes.js');
-router.use('/clientes',clientes);
-
+// Importar y utilizar las rutas específicas
+const plantaRoutes = require('./planta');
+router.use('/planta', plantaRoutes);
 
 module.exports = router;
